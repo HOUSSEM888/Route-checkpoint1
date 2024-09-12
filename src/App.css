@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* General container for the app */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header style */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff6347; /* Tomato color */
+  text-align: center;
+}
+
+/* Filter component styling */
+.filter {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter input {
+  padding: 10px;
+  border: 2px solid #ff6347; /* Tomato color */
+  border-radius: 8px;
+  font-size: 1em;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter input:focus {
+  border-color: #ff4500; /* OrangeRed color */
+  box-shadow: 0 4px 8px rgba(255, 69, 0, 0.2);
+  outline: none;
+}
+
+/* Add movie section styling */
+.add-movie {
+  margin-bottom: 30px;
+}
+
+.add-movie h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #664caf; /* Green color */
+  text-align: center;
+}
+
+.add-movie input, .add-movie textarea {
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #4c90af; /* Green color */
+  border-radius: 8px;
+  font-size: 1em;
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.add-movie textarea {
+  resize: vertical;
+  min-height: 80px;
+
+}
+
+.add-movie input:focus, .add-movie textarea:focus {
+  border-color: #388e3c; /* Darker Green color */
+  box-shadow: 0 4px 8px rgba(56, 142, 60, 0.2);
+  outline: none;
+}
+
+.add-movie button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green color */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.add-movie button:hover {
+  background-color: #388e3c; /* Darker Green color */
+  transform: scale(1.05);
+}
+
+/* Movie card styling */
+.movie-card {
+  border: 2px solid #ff6347; /* Tomato color */
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  width: calc(25% - 20px); /* Adjust width for responsive design */
+  vertical-align: top;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h2 {
+  font-size: 1.3em;
+  margin: 10px 0;
+  color: #ff6347; /* Tomato color */
+}
+
+.movie-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.movie-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Movie list styling */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .movie-card {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .movie-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-card {
+    width: calc(100% - 20px);
+  }
+}

@@ -1,0 +1,23 @@
+/* src/components/MovieDescription.css */
+.movie-description {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .movie-description img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .movie-description iframe {
+    margin-top: 20px;
+    width: 80%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  
+  .movie-description button {
+    margin-top: 20px;
+  }
+  

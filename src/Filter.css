@@ -1,0 +1,17 @@
+/* src/components/Filter.css */
+.filter {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .filter input, .filter select {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .filter label {
+    margin-right: 10px;
+  }
+  

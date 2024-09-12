@@ -1,0 +1,39 @@
+/* src/components/MovieCard.css */
+.movie-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .movie-card p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .movie-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .movie-card a:hover {
+    text-decoration: underline;
+  }
+  
